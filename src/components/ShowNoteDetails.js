@@ -11,7 +11,7 @@ function ShowNoteDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8082/api/notes/${id}`)
+      .get(`https://melodic-lolly-5c5e13.netlify.app/api/notes/${id}`)
       .then((res) => {
         setnote(res.data);
       })
@@ -22,7 +22,7 @@ function ShowNoteDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:8082/api/notes/${id}`)
+      .delete(`https://melodic-lolly-5c5e13.netlify.app/api/notes/${id}`)
       .then((res) => {
         navigate('/');
       })

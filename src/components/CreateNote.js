@@ -21,7 +21,7 @@ const CreateNote = (props) => {
     e.preventDefault();
 
     axios
-      .post('http://localhost:8082/api/notes', note)
+      .post('https://melodic-lolly-5c5e13.netlify.app/api/notes', note)
       .then((res) => {
         setNote({
           title: '',

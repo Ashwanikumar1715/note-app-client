@@ -9,7 +9,7 @@ function ShowNoteList() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8082/api/notes')
+      .get('https://melodic-lolly-5c5e13.netlify.app/api/notes')
       .then((res) => {
         setNote(res.data);
       })
