@@ -16,7 +16,7 @@ function UpdateNoteInfo(props) {
 
   useEffect(() => {
     axios
-      .get(`https://melodic-lolly-5c5e13.netlify.app/api/notes/${id}`)
+      .get(`https://note-app-backend-4ef0.onrender.com/api/notes/${id}`)
       .then((res) => {
         setNote({
           title: res.data.title,
@@ -46,7 +46,7 @@ function UpdateNoteInfo(props) {
     };
 
     axios
-      .put(`https://melodic-lolly-5c5e13.netlify.app/api/notes/${id}`, data)
+      .put(`https://note-app-backend-4ef0.onrender.com/api/notes/${id}`, data)
       .then((res) => {
         navigate(`/show-note/${id}`);
       })
